@@ -9,7 +9,10 @@
 
 class Commande{
     public:
-        Commande(Client client, std::vector<Produit> commande, std::string status);
+        Commande(Client client, std::vector<Produit> commande, std::string status = "pas livrée");
+
+        void updateStatus();
+        std::string getStatus();
 
     private:
         Client client_;

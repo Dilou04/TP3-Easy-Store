@@ -10,3 +10,11 @@ bool Commande::isLivre(std::string status){
     };
     return false;
 }
+
+void Commande::updateStatus(){
+    status_ = "Livré";
+}
+
+std::string Commande::getStatus(){
+    return status_;
+}

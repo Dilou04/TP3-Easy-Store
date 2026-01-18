@@ -15,4 +15,9 @@ int main(){
     dylan.addProduit(ps4);
     std::cout << dylan << std::endl;
 
+    Commande commande1(dylan, dylan.getPanier());
+    std::cout << "La commande est " << commande1.getStatus() << std::endl;
+
+    commande1.updateStatus();
+    std::cout << "La commande est " << commande1.getStatus() << std::endl;
 }

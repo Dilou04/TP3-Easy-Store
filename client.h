@@ -12,6 +12,7 @@ class Client{
         Client(std::string prenom, std::string nom, std::string id, std::vector<Produit> panier = {});
 
         void addProduit(const Produit& p);
+        std::vector<Produit> getPanier();
         friend std::ostream& operator <<(std::ostream& os, const Client& cli);
 
     private:

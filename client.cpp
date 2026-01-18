@@ -15,3 +15,7 @@ std::ostream& operator <<(std::ostream& os, const Client& cli){
 void Client::addProduit(const Produit& p){
     panier_.push_back(p);
 }
+
+std::vector<Produit> Client::getPanier(){
+    return panier_;
+}
