@@ -1,6 +1,7 @@
 #include <iostream>
 #include "produit.h"
 #include "client.h"
+#include "commande.h"
 
 int main(){
     
@@ -13,8 +14,5 @@ int main(){
     
     dylan.addProduit(ps4);
     std::cout << dylan << std::endl;
-
-
-
 
 }
